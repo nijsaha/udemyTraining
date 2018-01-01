@@ -21,4 +21,10 @@ func main() {
 	} else {
 		fmt.Println("second statement")
 	}
+
+	for i := 0; i < 100; i++ {
+		if i%3 == 0 {
+			println("hello i (", i, ") is divisible by 3")
+		}
+	}
 }
