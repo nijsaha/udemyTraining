@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-const s = "Hello World"
+const s string = "Hello World"
 const (
 	hello = "Hello"
 	base  = "0"
