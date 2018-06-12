@@ -9,7 +9,7 @@ type person struct {
 	age   myAge
 }
 
-//func receiver functionName(function arguments) returnType
+//func (receiver) functionName(function arguments) returnType
 func (p person) fullname() string {
 	return p.first + p.last
 }
