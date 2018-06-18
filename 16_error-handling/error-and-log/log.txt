@@ -1,0 +1,2 @@
+2018/06/18 00:03:31 ERROR HAPPENED:  open no-file.txt: no such file or directory
+2018/06/18 00:03:31 more err
