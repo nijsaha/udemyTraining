@@ -1,0 +1,21 @@
+<!--customary file extension used with go programming i.e. .gohtml can basically call these files anything in go. Unlike PHP, ASP, the extensions do not really matter for go it is just a customary best practice. go can pick the template up basically
+from any file type extension -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>hello world</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <ul>
+      {{$x:=.Name}}
+      {{$y:=.Motto}}
+      <li>{{$x}}
+        -
+        {{$y}}</li>
+
+    </ul>
+  </body>
+</html>

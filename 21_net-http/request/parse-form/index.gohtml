@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>INDEX</title>
+  </head>
+  <body>
+    {{if .}}
+      <main>
+        <p>
+          <strong>variable names</strong>(identifiers) and
+          <em>values</em>:</p>
+        {{range $key, $value:= .}}
+          <p>
+            <strong>{{$key}}</strong>
+          </p>
+          <ul>
+            {{range $value}}
+              <li>
+                <em>{{.}}</em>
+              </li>
+            {{end}}
+          </ul>
+        {{end}}
+      </main>
+    {{end}}
+
+    <form action="/?fname=bond" method="POST">
+      <!-- name is variable name which is used to hold the value of the input type (i.e text here) id is the identifier which identifies the field in CSS or javascript -->
+      <input type="text" name="fname" id="fname" placeholder="first name" autofocus="autofocus" autocomplete="off">
+      <input type="submit" name="btn-submit" value="Hit me">
+    </form>
+
+  </body>
+</html>
